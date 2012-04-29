@@ -1,0 +1,149 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="themes_Paalam_site" Codebehind="site.master.cs" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+<%@ Register Src="~/admin/menu.ascx" TagName="menu" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="menu">
+        <ul>
+            <li><a id="A1" href="~/" runat="server" rel="home">
+                <%=Resources.labels.home %></a></li>
+            <li><a id="A2" href="~/archive.aspx" runat="server">
+                <%=Resources.labels.archive %></a></li>
+            <li><a id="A3" href="~/contact.aspx" runat="server">
+                <%=Resources.labels.contact %></a></li>
+        </ul>
+    </div>
+    <div id="header">
+        <div class="logo">
+            <img height="160px" src="/blog/themes/ProfessionalLight/Images/Logo.gif" />
+        </div>
+    </div>
+    <div id="main">
+        <div id="content">
+            <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for"
+                Text="Here are some results for the search term on this website" />
+            <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+        </div>
+        <div class="sidecol" id="sidebar">
+            <ul>
+                <li>
+                    <h2>
+                        About</h2>
+                    <p>
+                        <strong>Author name</strong><br />
+                        Something about me and what I do.
+                        <br />
+                        <!-- Email -->
+                        <a href="<%=Utils.AbsoluteWebRoot %>contact.aspx" style="float: right; clear: both">
+                            E-mail me
+                            <img src="<%=Utils.RelativeWebRoot %>pics/mail.gif" alt="Send mail" style="width: 16px" />
+                        </a>
+                    </p>
+                </li>
+                <% if (Page.User.Identity.IsAuthenticated)
+                   { %>
+                <li>
+                    <h2>
+                        Administration</h2>
+                    <uc1:menu ID="Menu1" runat="server" />
+                </li>
+                <%} %>
+                <li>
+                    <h2>
+                        Search</h2>
+                    <blog:SearchBox ID="SearchBox1" runat="server" />
+                </li>
+                <li>
+                    <h2>
+                        Authors</h2>
+                    <blog:AuthorList ID="AuthorList1" ShowRssIcon="false" runat="Server" />
+                </li>
+                <li>
+                    <h2>
+                        <%=Resources.labels.pages %></h2>
+                    <blog:PageList ID="PageList1" runat="Server" />
+                </li>
+                <li>
+                    <h2>
+                        Subscribe</h2>
+                    <ul>
+                        <li><a href="<%=Utils.FeedUrl %>" class="feed">Posts RSS</a></li>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>syndication.axd?comments=show" class="feed">
+                            Comments RSS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>
+                        Tags</h2>
+                    <blog:TagCloud ID="TagCloud1" runat="server" />
+                </li>
+                <li>
+                    <h2>
+                        Categories</h2>
+                    <blog:CategoryList ID="CategoryList1" ShowRssIcon="true" runat="Server" />
+                </li>
+                <li>
+                    <h2>
+                        Blogs I like!</h2>
+                    <blog:Blogroll ID="Blogroll1" runat="server" />
+                </li>
+                <li>
+                    <h2>
+                        Recent Comments</h2>
+                    <blog:RecentComments ID="RecentComments" runat="server" />
+                </li>
+                <li>
+                    <h2>
+                        Calendar</h2>
+                    <div style="text-align: center">
+                        <blog:PostCalendar ID="PostCalendar1" runat="Server" NextMonthText=">>" DayNameFormat="FirstTwoLetters"
+                            FirstDayOfWeek="monday" PrevMonthText="<<" CssClass="calendar" BorderWidth="0"
+                            WeekendDayStyle-CssClass="weekend" OtherMonthDayStyle-CssClass="other" UseAccessibleHeader="true"
+                            EnableViewState="false" />
+                        <br />
+                        <a href="<%=Utils.AbsoluteWebRoot %>calendar/default.aspx" />View posts in large
+                        calendar</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>
+                        <%=Resources.labels.archive %></h2>
+                    <blog:MonthList ID="MonthList1" runat="server" />
+                </li>
+                <li>
+                    <h2>
+                        Disclaimer</h2>
+                    <p>
+                        The opinions expressed herein are my own personal opinions and do not represent
+                        my employer's view in anyway.</p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both">
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            <span>
+                <asp:LoginStatus ID="LoginStatus2" runat="Server" LoginText="Site Admin" LogoutText="Sign out"
+                    EnableViewState="false" />
+                | <a href="http://www.dotnetblogengine.net/" target="_blank" title="Powered by BlogEngine.Net">
+                    BlogEngine.NET</a> | <a title="Original Design by Paalam WordPress Theme" href="http://wpthemepark.com/themes/paalam/"
+                        target="_blank">WP Themes</a>, Adapted by <a href="http://www.dscoduc.com" target="_blank"
+                            title="Adapted by Chris Blankenship at www.dscoduc.com">Chris Blankenship</a>
+            </span><strong>
+                <%=BlogSettings.Instance.Name %></strong> &copy;
+            <%=DateTime.Now.Year %>
+            All rights reserved.
+        </p>
+    </div>
+    </form>
+</body>
+</html>

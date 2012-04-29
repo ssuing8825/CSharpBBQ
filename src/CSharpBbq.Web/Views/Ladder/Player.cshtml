@@ -1,0 +1,105 @@
+﻿@model CSharpBbq.Web.Models.PlayerViewModel
+
+@{
+    ViewBag.Title = "Kerr Ladder - Player";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>@Model.Player.Name</h2>
+<div class="dash">
+<div>Current Rank : @Model.CurrentRank</div>
+<div>Wins : @Model.Wins</div>
+<div>Loses : @Model.Loses</div>
+<div>Last Match : @Model.LastMatch</div>
+
+
+</div>
+
+
+ @if (Model.Player.Standings.Count > 0)
+ {
+     
+<table id="mytable" cellspacing="0" summary="Player Standings">
+   <caption>Rankings per Week</caption>
+    <tr>
+        <th>
+            Week
+        </th>
+        <th>
+            Rank 
+        </th>
+    </tr>
+    @foreach (var item in Model.Player.Standings)
+    {
+        <tr>
+            <td>
+              @Html.ActionLink(item.LadderWeek.WeekNumber.ToString(), "Week", new { id = item.LadderWeek.Id })
+            </td>
+            <td>@item.Position
+            </td>
+        </tr>
+    }
+</table>
+}
+ else
+ { 
+     <text>  ** No Standings Exist  </text>
+ }
+
+ </br>
+  @if (Model.Matches.Count > 0)
+ {
+     
+<table id="mytable" cellspacing="0" summary="Matches">
+  <caption>@Model.Player.Name's Matches</caption>
+    <tr>
+        <th>
+            Date
+        </th>
+        <th>
+            Opponent 
+        </th>
+        <th>
+            Result
+        </th>
+          
+        <th>Gm 1
+        </th>
+        <th>Gm 2
+        </th>
+        <th>Gm 3
+        </th>
+    </tr>
+    @foreach (var item in Model.Matches)
+    {
+        <tr>
+            <td>@item.DateOfMatch.Value.ToShortDateString()
+            </td>
+            <td>@Html.ActionLink(Model.Player.Id == item.LooserId ? item.GetWinnerName() : item.GetLooserName(), "Player", new { id = Model.Player.Id == item.LooserId ? item.Winner.Id : item.Looser.Id  })
+            </td>
+            <td>@(Model.Player.Id == item.LooserId ? "Loss" : "Win")
+            </td>
+             <td nowrap="nowrap">
+                @item.G1W - @item.G1L
+            </td>
+            <td nowrap="nowrap">
+                @item.G2W - @item.G2L
+            </td>
+            <td nowrap="nowrap">
+            @if (item.G3W.HasValue)
+            {
+                <text> @item.G3W - @item.G3L </text>
+            }
+            else
+            {
+                <text> </text>
+            }
+            </td>
+        </tr>  
+    }
+</table>
+ }
+  else
+  { 
+     <text>  ** No Standings Exist  </text>
+ }

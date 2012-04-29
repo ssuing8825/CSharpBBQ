@@ -1,0 +1,5 @@
+﻿@model CSharpBbq.Web.Models.LadderWeekViewModel
+@{
+    ViewBag.Title = "Kerr Ladder - Week " + @Model.LadderWeek.WeekNumber.ToString();
+}
+  @{Html.RenderPartial("SingleWeekResult");}

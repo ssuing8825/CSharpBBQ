@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="31c2eb63-21db-4613-9a8c-3649a00e96ab"
+  name="CSharpBbq.Design" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="d2a957b1-775c-43bb-bb3a-a1db1d1b0716">
+      <body>ls -  BookmarkUrl</body>
+    </comment>
+    <comment
+      Id="f6c671a4-0597-443a-a9a9-4abbca217ed5">
+      <body>ls:ladderweek</body>
+    </comment>
+    <comment
+      Id="2b92c8d6-fd3b-4b12-97a3-0b6f337d286c">
+      <body>ls:player</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="4ac5e10b-a931-42f1-bf40-0259a3ac1d1e">
+      <profileInstance
+        Id="cc3d2ca1-70d2-4a95-9e84-ff454e67b150"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="c80da3ec-aaf5-4b40-826d-c0b949842c63"
+        name="ReferenceRelationship"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="9ffe035d-36c0-44ba-a12f-9a6f458821f1"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e0d475a8-8f9d-4d81-9ae1-66eb00074987"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="6fbe9c6c-8c21-4286-ab29-0a37d41cc5c9"
+                  LastKnownName="ls:matches  GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="63cd5d4f-5e92-4de9-857c-871c7363723b"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="d3e21ca2-2196-4013-9407-3417c5da168d"
+                  LastKnownName="ls:ladderweeks  GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8abe9247-9f92-4380-9742-e17478a834f3"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="bd1d27b4-49fa-489b-aecf-fbcaf032895b"
+                  LastKnownName="ls:players GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8c5e47cc-61ef-4c27-a44f-27c122e3014c"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="5076c7d8-72f6-4577-939f-691fbb3c7cd2"
+                  LastKnownName="ls:match GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="92120af1-79a2-4ef8-83cb-283455dcf7d3"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="b9a8c166-4f64-4279-9a53-487da8d5c249"
+                  LastKnownName="ls:ladderweek GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="10e5fe89-c03c-416f-8b89-67baff69bc9a"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="c1944424-e719-4c1e-856d-3f92fa1f80dc"
+                  LastKnownName="ls:player GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="641c9f0e-ec44-45db-abdf-9b4aa38b5cf4"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="cdd34f3f-f99b-4a43-af4b-3366b59c5f40"
+                  LastKnownName="ls:standings GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode
+            Id="625a8cd8-7a06-4c9e-9336-f4ea9c1fe834"
+            name="ResourceList&lt;LadderWeek&gt;"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="05362b72-4137-4e32-904e-1df3aebf1b63"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="b9a8c166-4f64-4279-9a53-487da8d5c249"
+                  LastKnownName="ls:ladderweek GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="a4a2e168-07c2-4c8f-aa89-702b956ddf2b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="02943d2b-c781-414d-ab20-acf7bf3a2905"
+            name="ls:match POST"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="bb893e00-ede2-4597-9a6b-b1a9c79c43df"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="ffe08b6c-097b-4a87-a8b4-010ccf7070a2"
+                  LastKnownName="Match"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="5367c2ae-c4b6-45bd-b0dc-aa6e0c0cbbaf"
+            name="ls:match DELETE"
+            isLeaf="false"
+            isUnmarshall="false" />
+          <objectNode
+            Id="1dc63af8-a8f8-4cae-9772-f5aa8b0ed4b5"
+            name="ResourceList&lt;Match&gt;"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="4cfee971-4c1c-4377-ad8b-172a5127dfc6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="5076c7d8-72f6-4577-939f-691fbb3c7cd2"
+                  LastKnownName="ls:match GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="10b1b08f-29ce-4b7b-90e9-6119b86323e3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="6fbe9c6c-8c21-4286-ab29-0a37d41cc5c9"
+            name="ls:matches  GET"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="685838b9-bce5-4587-af1a-37f5485cc394"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="1dc63af8-a8f8-4cae-9772-f5aa8b0ed4b5"
+                  LastKnownName="ResourceList&lt;Match&gt;"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="d3e21ca2-2196-4013-9407-3417c5da168d"
+            name="ls:ladderweeks  GET"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b881d306-bab1-456f-8592-0f80ff31a3e9"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="625a8cd8-7a06-4c9e-9336-f4ea9c1fe834"
+                  LastKnownName="ResourceList&lt;LadderWeek&gt;"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="ffe08b6c-097b-4a87-a8b4-010ccf7070a2"
+            name="Match"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b87c3278-768c-463e-9817-5ac632eae137"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="06bd54fd-eddb-4360-aa4c-b5741545a894"
+                  LastKnownName="ls:match PUT"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="84bc9e4a-ef0d-4141-a1f2-ca4b0ead6f56"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="5367c2ae-c4b6-45bd-b0dc-aa6e0c0cbbaf"
+                  LastKnownName="ls:match DELETE"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="6dd2cbb9-62b9-4dbf-bfc1-e09e2b4d3475"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="02943d2b-c781-414d-ab20-acf7bf3a2905"
+                  LastKnownName="ls:match POST"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="204e43e6-0a8f-45fb-b7e8-4b4123c30335"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="06bd54fd-eddb-4360-aa4c-b5741545a894"
+            name="ls:match PUT"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="de9f565d-fcf4-4baa-a8a1-cb3ad03fcfb3"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="ffe08b6c-097b-4a87-a8b4-010ccf7070a2"
+                  LastKnownName="Match"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <sendSignalAction
+            Id="bd1d27b4-49fa-489b-aecf-fbcaf032895b"
+            name="ls:players GET"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c5613f2a-f9ea-46d8-ad40-afdc4b726960"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5b79c2b4-2792-4055-9512-4ceb705fdce1"
+                  LastKnownName="ResourceList&lt;Player&gt;"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="5b79c2b4-2792-4055-9512-4ceb705fdce1"
+            name="ResourceList&lt;Player&gt;"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="edfd6a5d-6412-475a-9631-f4f04e19ce03"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="c1944424-e719-4c1e-856d-3f92fa1f80dc"
+                  LastKnownName="ls:player GET"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="59fd3353-1337-4cf1-b275-b86d724a534d"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="f3d22970-6e2b-433d-8f95-b22823fe0553"
+            name="POST"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7d95ee21-57c9-4627-a3b3-6400e16dfb76"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="8380fa72-d395-406f-970b-c31d147cdcdc"
+                  LastKnownName="Player"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="c1944424-e719-4c1e-856d-3f92fa1f80dc"
+            name="ls:player GET"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9a207749-9707-4ac6-89cc-569b61bf67a5"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="8380fa72-d395-406f-970b-c31d147cdcdc"
+                  LastKnownName="Player"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="ac63a32e-0119-43aa-af51-06e1b8349916"
+            name="POST"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="85553621-8df9-48fd-b926-ceffa97ad142"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="36ba24f7-b570-4de4-a8c6-9f289261376c"
+                  LastKnownName="LadderWeek"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="b9a8c166-4f64-4279-9a53-487da8d5c249"
+            name="ls:ladderweek GET"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b5a464a6-796f-4e74-994b-26670827fa08"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="36ba24f7-b570-4de4-a8c6-9f289261376c"
+                  LastKnownName="LadderWeek"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <objectNode
+            Id="36ba24f7-b570-4de4-a8c6-9f289261376c"
+            name="LadderWeek"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ef561fc6-10e5-462a-9e02-56e3f678be6e"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="143b838a-280c-41b3-9327-23b81e7811d8"
+                  LastKnownName="PUT"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="f69a8c9d-7e54-4154-9714-ebf92d2dbc54"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="34a32ef2-13c1-4cc2-9e8c-a38e06bb73d5"
+                  LastKnownName="DELETE"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="26182611-ebfc-478a-9ea8-64d2a9715e0d"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="ac63a32e-0119-43aa-af51-06e1b8349916"
+                  LastKnownName="POST"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="362dbc64-49c1-491e-b067-5c04ac748209"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="143b838a-280c-41b3-9327-23b81e7811d8"
+            name="PUT"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f19d737b-2c9b-441f-98a4-db157bc59136"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="36ba24f7-b570-4de4-a8c6-9f289261376c"
+                  LastKnownName="LadderWeek"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="34a32ef2-13c1-4cc2-9e8c-a38e06bb73d5"
+            name="DELETE"
+            isLeaf="false"
+            isUnmarshall="false" />
+          <objectNode
+            Id="8380fa72-d395-406f-970b-c31d147cdcdc"
+            name="Player"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="35f98794-bc40-4a35-bc66-a5bf9d3941e9"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="a4635e1b-d1af-47ac-bbcd-c01e9dcebac5"
+                  LastKnownName="PUT"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="d3e97bc6-a140-48c5-bfa3-edfe5119c798"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="ef9c2ea2-d75a-41a3-8ce6-904d948c2406"
+                  LastKnownName="DELETE"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="383c750a-d25d-42df-88a4-4355e7a5f984"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <acceptEventActionMoniker
+                  Id="f3d22970-6e2b-433d-8f95-b22823fe0553"
+                  LastKnownName="POST"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="053164fb-968c-4d09-9dd5-561081bfe7f6"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="a4635e1b-d1af-47ac-bbcd-c01e9dcebac5"
+            name="PUT"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c86ba4ce-3d22-4a4d-8f9b-b92d0f4c16f2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="8380fa72-d395-406f-970b-c31d147cdcdc"
+                  LastKnownName="Player"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="ef9c2ea2-d75a-41a3-8ce6-904d948c2406"
+            name="DELETE"
+            isLeaf="false"
+            isUnmarshall="false" />
+          <sendSignalAction
+            Id="cdd34f3f-f99b-4a43-af4b-3366b59c5f40"
+            name="ls:standings GET"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="dcc1fd52-c8ea-4a32-a396-2ab913c395d2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="a7e88657-8350-4fe6-8c90-7a271de7e614"
+                  LastKnownName="ResourceList&lt;Standing&gt;"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="a7e88657-8350-4fe6-8c90-7a271de7e614"
+            name="ResourceList&lt;Standing&gt;"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="11e50fe1-30ef-487e-a75c-7374f62e0b93"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <acceptEventAction
+            Id="5076c7d8-72f6-4577-939f-691fbb3c7cd2"
+            name="ls:match GET"
+            isLeaf="false"
+            isUnmarshall="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ddfa7f02-a035-4a20-9f29-0bf9e8f6004a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="ffe08b6c-097b-4a87-a8b4-010ccf7070a2"
+                  LastKnownName="Match"
+                  LastKnownLocation="CSharpBbq.Design.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <sendSignalAction
+            Id="25a44ab5-b6e1-4a36-b8b1-3f886d11b47e"
+            name="ls:matches Get w/options"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ccdd5a73-a215-4e5b-8f3a-16e030af8b18"
+        LastKnownName="CSharpBbq"
+        LastKnownLocation="Package_0647.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dec36815-25c5-4536-a185-05a9cfd80965"
+        LastKnownName="System"
+        LastKnownLocation="Package4_0647.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

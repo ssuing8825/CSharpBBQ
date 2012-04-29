@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CSharpBbq.Data.Model.Ladder.LadderWeek>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            WeekNumber
+        </th>
+        <th>
+            StertDate
+        </th>
+        <th>
+            EndDate
+        </th>
+        <th>
+            IsCurrent
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Edit Standings", "Edit", new { id=item.Id, Controller = "Standings" }) |
+            @Html.ActionLink("Create Standings", "CreateNewWeek", new { id=item.Id, Controller = "Standings" }) |
+        </td>
+        <td>
+            @item.WeekNumber
+        </td>
+        <td>
+            @String.Format("{0:MM/dd/yyyy}", item.StertDate)
+        </td>
+        <td>
+            @String.Format("{0:MM/dd/yyyy}", item.EndDate)
+        </td>
+        <td>
+            @item.IsCurrent
+        </td>
+    </tr>
+}
+
+</table>
+

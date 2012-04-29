@@ -1,0 +1,132 @@
+﻿@model CSharpBbq.Data.Model.Ladder.Match
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Match</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+          <div class="editor-label">
+            @Html.LabelFor(model => model.ChallengerId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.ChallengerId, ((IEnumerable<CSharpBbq.Data.Model.Ladder.Player>)ViewBag.PossibleWinners).Select(option => new SelectListItem
+       {
+   Text = (option == null ? "None" : option.Name),
+   Value = option.Id.ToString(),
+   Selected = (Model != null) && (option.Id == Model.ChallengerId)
+   }), "Choose...")
+            @Html.ValidationMessageFor(model => model.ChallengerId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.WinnerId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.WinnerId, ((IEnumerable<CSharpBbq.Data.Model.Ladder.Player>)ViewBag.PossibleWinners).Select(option => new SelectListItem {
+   Text = (option == null ? "None" : option.Name),
+   Value = option.Id.ToString(),
+   Selected = (Model != null) && (option.Id == Model.WinnerId)
+   }), "Choose...")
+            @Html.ValidationMessageFor(model => model.WinnerId)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LooserId)
+        </div>
+        <div class="editor-field">
+              @Html.DropDownListFor(model => model.LooserId, ((IEnumerable<CSharpBbq.Data.Model.Ladder.Player>)ViewBag.PossibleLoosers).Select(option => new SelectListItem {
+   Text = (option == null ? "None" : option.Name),
+   Value = option.Id.ToString(),
+   Selected = (Model != null) && (option.Id == Model.LooserId)
+   }), "Choose...")
+            @Html.ValidationMessageFor(model => model.LooserId)
+        </div>
+            <div class="editor-label">
+            @Html.LabelFor(model => model.LadderWeekId)
+        </div>
+         <div class="editor-field">
+              @Html.DropDownListFor(model => model.LadderWeekId, ((IEnumerable<CSharpBbq.Data.Model.Ladder.LadderWeek>)ViewBag.PossibleLadderWeeks).Select(option => new SelectListItem {
+   Text = (option == null ? "None" : option.WeekNumber.ToString()),
+   Value = option.Id.ToString(),
+   Selected = (Model != null) && (option.Id == Model.LadderWeekId)
+   }), "Choose...")
+            @Html.ValidationMessageFor(model => model.LadderWeekId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DateOfMatch)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DateOfMatch)
+            @Html.ValidationMessageFor(model => model.DateOfMatch)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G1W)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G1W)
+            @Html.ValidationMessageFor(model => model.G1W)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G1L)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G1L)
+            @Html.ValidationMessageFor(model => model.G1L)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G2W)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G2W)
+            @Html.ValidationMessageFor(model => model.G2W)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G2L)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G2L)
+            @Html.ValidationMessageFor(model => model.G2L)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G3W)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G3W)
+            @Html.ValidationMessageFor(model => model.G3W)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.G3L)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.G3L)
+            @Html.ValidationMessageFor(model => model.G3L)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

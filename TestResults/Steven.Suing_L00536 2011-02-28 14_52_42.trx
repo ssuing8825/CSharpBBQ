@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7d984b7d-e7e1-44be-b30c-0fb143a145c4" name="Steven.Suing@L00536 2011-02-28 14:52:42" runUser="APPLIEDIS\Steven.Suing" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="5f54e2a6-a299-441a-a516-ceb675508073">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Steven.Suing_L00536 2011-02-28 14_52_42">
+      <DeploymentItem filename="C:\TFS\SDC\MSI\Product Lines\Policy\Geico.Msi.PolicySystem.Cycle.PolicyServices\Dev\Tatooine\packages\structuremap.2.6.1.0\automocking\StructureMap.AutoMocking.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\lib\Microsoft.Net.Http.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\structuremap.2.6.1.0\lib\StructureMap.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\Moq.4.0.0.0\lib\Moq.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\bin\Debug\Movies.Business.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Data\bin\Debug\Movies.Data.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\FluentValidation.2.0.0.0\lib\NET35\FluentValidation.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\lib\Microsoft.Http.Extensions.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Service\bin\Movies.Service.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies\bin\Movies.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\FluentAssertions.1.3.0.1\lib\FluentAssertions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-02-28T14:52:42.3082696-05:00" queuing="2011-02-28T14:52:42.3112698-05:00" start="2011-02-28T14:52:42.3422716-05:00" finish="2011-02-28T14:52:42.7712961-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="5bbae043-482d-d28b-9bc6-8146bb49c9fa">
+      <Execution id="1c4a2de6-a786-48ab-acda-0254f15c94e0" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.IMovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMovieTest" />
+    </UnitTest>
+    <UnitTest name="SaveMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="ec0008f7-4ea6-7a5f-7674-17d776b8babb">
+      <Execution id="4712925e-d166-4881-8918-43f293fc44e0" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.IMovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveMovieTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ec0008f7-4ea6-7a5f-7674-17d776b8babb" executionId="4712925e-d166-4881-8918-43f293fc44e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bbae043-482d-d28b-9bc6-8146bb49c9fa" executionId="1c4a2de6-a786-48ab-acda-0254f15c94e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4712925e-d166-4881-8918-43f293fc44e0" testId="ec0008f7-4ea6-7a5f-7674-17d776b8babb" testName="SaveMovieTest" computerName="L00536" duration="00:00:00.1157923" startTime="2011-02-28T14:52:42.3402714-05:00" endTime="2011-02-28T14:52:42.6872913-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4712925e-d166-4881-8918-43f293fc44e0">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.IMovieAgentTest.SaveMovieTest threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at Movies.Business.Proxy.MovieAgent.SaveMovie(Movie movie) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\MoviesAgent.cs:line 28
+   at Movies.Business.Test.IMovieAgentTest.SaveMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\IMovieAgentTest.cs:line 106
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1c4a2de6-a786-48ab-acda-0254f15c94e0" testId="5bbae043-482d-d28b-9bc6-8146bb49c9fa" testName="GetMovieTest" computerName="L00536" duration="00:00:00.0428905" startTime="2011-02-28T14:52:42.7002920-05:00" endTime="2011-02-28T14:52:42.7482948-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c4a2de6-a786-48ab-acda-0254f15c94e0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Movies.Business.Model.Movie&gt;. Actual:&lt;Movies.Business.Model.Movie&gt;. </Message>
+          <StackTrace>   at Movies.Business.Test.IMovieAgentTest.GetMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\IMovieAgentTest.cs:line 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

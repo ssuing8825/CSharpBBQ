@@ -1,0 +1,44 @@
+﻿@model CSharpBbq.Data.Model.Ladder.Match
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Match</legend>
+
+    <div class="display-label">WinnerId</div>
+    <div class="display-field">@Model.WinnerId</div>
+
+    <div class="display-label">LooserId</div>
+    <div class="display-field">@Model.LooserId</div>
+
+    <div class="display-label">DateOfMatch</div>
+    <div class="display-field">@String.Format("{0:g}", Model.DateOfMatch)</div>
+
+    <div class="display-label">G1W</div>
+    <div class="display-field">@Model.G1W</div>
+
+    <div class="display-label">G1L</div>
+    <div class="display-field">@Model.G1L</div>
+
+    <div class="display-label">G2W</div>
+    <div class="display-field">@Model.G2W</div>
+
+    <div class="display-label">G2L</div>
+    <div class="display-field">@Model.G2L</div>
+
+    <div class="display-label">G3W</div>
+    <div class="display-field">@Model.G3W</div>
+
+    <div class="display-label">G3L</div>
+    <div class="display-field">@Model.G3L</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

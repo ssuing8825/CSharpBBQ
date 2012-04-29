@@ -1,0 +1,73 @@
+﻿@model CSharpBbq.Web.Models.LadderWeekViewModel
+<h3>
+    Results for Week Number @Model.LadderWeek.WeekNumber: @Model.LadderWeek.StertDate.ToShortDateString()
+    - @Model.LadderWeek.EndDate.ToShortDateString()
+</h3>
+</br>
+@if (Model.Standings.Count > 0)
+{
+     
+    <table id="mytable" cellspacing="0" summary="Standings as of this week">
+        <tr>
+            <th>
+                Rank
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Wins
+            </th>
+              <th>
+                Loses
+            </th>
+               <th>
+                Points
+            </th>
+        </tr>
+        @foreach (var item in Model.Standings)
+        {
+            <tr>
+                <td>@item.CurrentRank
+                </td>
+                <td>
+                    @Html.ActionLink(item.Player.Name, "Player", new { id = item.Player.Id })
+                </td>
+                 <td>@item.Wins
+                </td>
+                <td>@item.Loses
+                </td>
+                <td>@item.Points
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{ 
+    <text> ** Results for this week have been recorded </text>
+}
+<br>
+@if (Model.Matches.Count > 0)
+{
+ 
+    foreach (var item in Model.Matches)
+    {
+    <div class="results">
+        <div>@item.DateOfMatch.Value.ToShortDateString()</div>
+        <div>@Html.ActionLink(@item.GetWinnerName(), "Player", new { id = item.Winner.Id }) defeated
+            @Html.ActionLink(@item.GetLooserName(), "Player", new { id = item.Looser.Id })
+            @item.G1W-@item.G1L, @item.G2W-@item.G2L
+            @if (item.G3L.HasValue)
+            {
+                <text> @item.G3W-@item.G3L </text>
+            }
+        </div>
+    </div>
+    }
+}
+else
+{
+    <text>** No Matches for this week</text>
+}
+<cite> * Challenger </cite>

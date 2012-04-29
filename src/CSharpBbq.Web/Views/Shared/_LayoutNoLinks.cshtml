@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/ladder.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.6.3.min.js")" type="text/javascript" ></script>
+    <script src="../../Scripts/ext/jquery-ui-1.8.11.custom.min.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript">
+         $(function() {
+             $(".datePicker").datepicker({ showOn: 'both', buttonImage: "/Content/images/calendar.gif" });
+         });
+     </script>-->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22500538-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <!-- Begin Wrapper -->
+    <div id="wrapper">
+        <!-- Begin Header -->
+        <div id="header">
+            <h1>
+                Kerr YMCA Racquetball</h1>
+        </div>
+        <!-- End Header -->
+        <!-- Begin Faux Columns -->
+        <div id="faux">
+            <!-- Begin Left Column -->
+            <div id="leftcolumn">
+                @Html.ActionLink("Home", "Index", "Ladder")<br>
+                @Html.ActionLink("Rules", "Rules", "Ladder")<br>
+                   @Html.ActionLink("FAQ", "FAQ", "Ladder")<br>
+                @Html.ActionLink("All Matches", "IndexReadOnly", "Matches")<br>
+                @Html.Action("Weeks", "Ladder")<br>
+                <a href="ladder\Legal">Waiver</a>
+            </div>
+            <!-- End Left Column -->
+            <!-- Begin Right Column -->
+            <div id="rightcolumn">
+                @RenderBody()
+                <div class="clear">
+                </div>
+            </div>
+            <!-- End Right Column -->
+            <div class="clear">
+            </div>
+        </div>
+        <!-- End Faux Columns -->
+        <!-- Begin Footer -->
+        <div id="footer">
+            <a href="mailto:rb@csharpbbq.com">Email</a> me with questions
+        </div>
+    </div>
+    <!-- End Footer -->
+    </div>
+    <!-- End Wrapper -->
+</body>
+</html>

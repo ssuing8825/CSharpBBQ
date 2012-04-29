@@ -1,0 +1,30 @@
+﻿@model CSharpBbq.Data.Model.Ladder.Standing
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Standing</legend>
+
+    <div class="display-label">LadderWeekId</div>
+    <div class="display-field">@Model.LadderWeekId</div>
+
+    <div class="display-label">PlayerId</div>
+    <div class="display-field">@Model.PlayerId</div>
+
+    <div class="display-label">Position</div>
+    <div class="display-field">@Model.Position</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

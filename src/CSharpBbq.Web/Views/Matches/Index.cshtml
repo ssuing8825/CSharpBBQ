@@ -1,0 +1,85 @@
+﻿@model IEnumerable<CSharpBbq.Data.Model.Ladder.Match>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Matches</h2>
+    @Html.ActionLink("Create New", "Create")
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Winner
+        </th>
+        <th>
+            Loose
+        </th>
+        <th>
+            Week
+        </th>
+        <th>
+            Date
+        </th>
+        <th>
+            G1W
+        </th>
+        <th>
+            G1L
+        </th>
+        <th>
+            G2W
+        </th>
+        <th>
+            G2L
+        </th>
+        <th>
+            G3W
+        </th>
+        <th>
+            G3L
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+            @item.Winner.Name
+        </td>
+        <td>
+            @item.Looser.Name
+        </td>
+        <td>
+            @item.LadderWeek.WeekNumber.ToString()
+        </td>
+        <td>
+            @String.Format("{0:MM/dd/yyyy}", item.DateOfMatch)
+        </td>
+        <td>
+            @item.G1W
+        </td>
+        <td>
+            @item.G1L
+        </td>
+        <td>
+            @item.G2W
+        </td>
+        <td>
+            @item.G2L
+        </td>
+        <td>
+            @item.G3W
+        </td>
+        <td>
+            @item.G3L
+        </td>
+    </tr>
+}
+
+</table>
+

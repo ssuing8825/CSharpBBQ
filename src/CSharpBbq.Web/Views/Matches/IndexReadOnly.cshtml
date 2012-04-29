@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CSharpBbq.Data.Model.Ladder.Match>
+@{
+    ViewBag.Title = "Kerr Ladder - All Matches";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+<h2>
+    All matches</h2>
+<table>
+    <tr>
+        <th>
+            Week
+        </th>
+        <th>
+            Date
+        </th>
+        <th>
+            Winner
+        </th>
+        <th>
+            Looser
+        </th>
+            <th>Gm 1
+        </th>
+        <th>Gm 2
+        </th>
+        <th>Gm 3
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+              @Html.ActionLink(item.LadderWeek.WeekNumber.ToString(), "Week", new { id = item.LadderWeekId, Controller = "Ladder" })
+            </td>
+            <td nowrap="nowrap">
+                @String.Format("{0:MM/dd/yyyy}", item.DateOfMatch)
+            </td>
+            <td nowrap="nowrap">
+              @Html.ActionLink(item.GetWinnerName(), "Player", new { id = item.Winner.Id, Controller = "Ladder" })
+            </td>
+            <td nowrap="nowrap">
+                @Html.ActionLink(item.GetLooserName(), "Player", new { id = item.Looser.Id, Controller = "Ladder" })
+            </td>
+            <td nowrap="nowrap">
+                @item.G1W - @item.G1L
+            </td>
+            <td nowrap="nowrap">
+                @item.G2W - @item.G2L
+            </td>
+            <td nowrap="nowrap">
+            @if (item.G3W.HasValue)
+            {
+                <text> @item.G3W - @item.G3L </text>
+            }
+            else
+            {
+                <text> </text>
+            }
+            </td>
+        </tr>
+    }
+</table>
+<cite> * Challenger </cite>

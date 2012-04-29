@@ -1,0 +1,23 @@
+﻿@model CSharpBbq.Data.Model.Ladder.Player
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Player</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">@Model.Email</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

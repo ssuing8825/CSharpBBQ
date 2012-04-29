@@ -1,0 +1,50 @@
+﻿@model int
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutNoLinks.cshtml";
+}
+<h2>
+    Edit</h2>
+<link href="@Url.Content("~/content/jquery-ui-1.8.11.custom.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/content/ui.jqgrid.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/ext/jquery-1.4.2.min.js")" type="text/javascript" ></script>
+<script src="@Url.Content("~/Scripts/ext/grid.locale-en.js")" type="text/javascript" ></script>
+<script src="@Url.Content("~/Scripts/ext/jquery.jqGrid.min.js")" type="text/javascript" ></script>
+<script type="text/javascript">
+
+    $(function () {
+        $("#ajaxGrid").jqGrid({
+            url: '@Url.Action("GridData","Standings", new {ladderWeekId = Model} )',
+            datatype: "json",
+            jsonReader: { repeatitems: false, id: "StandingId" },
+            colNames: ['StandingId', 'Position', 'Name', "PlayerId", "LadderWeekId"],
+            colModel: [
+             { name: 'StandingId', editable: true, sortable: false, hidden: true },
+             { name: 'Position', editable: true, sortable: true, hidden: false },
+             { name: 'Name', editable: false, sortable: false, hidden: false },
+             { name: 'PlayerId', editable: true, sortable: false, hidden: true },
+             { name: 'LadderWeekId', editable: true, sortable: false, hidden: true }
+         ],
+            pager: '#ajaxGridPager',
+            rowNum: 25,
+            width: '560px',
+            height: '450px'
+        });
+
+
+        jQuery("#ajaxGrid").jqGrid('navGrid', '#ajaxGridPager',
+         { search: false, refresh: false },
+        //Edit Options
+         {url: '@Url.Action("Edit")', closeAfterEdit: true },
+        //Add Options
+         {url: '@Url.Action("Create")', closeAfterAdd: true },
+        //Delete Options
+         {url: '@Url.Action("Delete")' }
+     );
+
+    });
+</script>
+<table id="ajaxGrid">
+</table>
+<div id="ajaxGridPager">
+</div>

@@ -1,0 +1,259 @@
+﻿* { padding: 0; margin: 0; }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 622px;
+}
+#faux {
+ background: url(faux-1-2-col.gif);
+ margin-bottom: 5px;
+ overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+ width: 100%
+}
+#header {
+ color: #333;
+ width: 602px;
+ padding: 10px;
+ height: 50px;
+ margin: 10px 0px 5px 0px;
+ background: #CAE8EA;
+}
+#leftcolumn { 
+ display: inline;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 80px;
+ float: left;
+}
+#rightcolumn { 
+ float: Left;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 483px;
+ display: inline;
+ position: relative;
+}
+#footer { 
+ width: 602px;
+ clear: both;
+ color: #333;
+ background: #CAE8EA;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+ text-align: center;
+}
+
+a { text-decoration: none; color: #3F5B83; }
+a:hover { text-decoration: underline; color: #660066; }
+
+
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 10px 0;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+.dash
+{
+    border-style: solid none solid none;
+    border-width: thin;
+    border-color: #C1DAD7;
+    display: inline-block;
+    padding: 0 0 3px 0;
+    width: 450px;
+    margin-bottom: 10px;
+}
+.dash div
+{
+    display: inline;
+    width: 111px;
+    padding: 0 20px 0 0;
+    text-align: left;
+}
+
+.results
+{
+     display :block;
+     padding: 0 0 5px 0;
+     width: 450px;
+}
+.results div
+{
+    display: inline;
+    width: 100px;
+    padding: 0 20px 2px 0;
+    text-align: left;
+}
+
+
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+
+.clear { clear: both; background: none; }
+
+#mytable {
+	width: 450px;
+	padding: 0;
+	margin: 0;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	width: 450px;	 
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 3px 6px 3px 12px;
+	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+
+th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+
+td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 2px 6px 2px 12px;
+	color: #4f6b72;
+}
+
+
+td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+    display: inline-block;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+input[type="text"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label
+{
+    margin: 1px 0 0 0;
+    display:inline;
+}
+
+.display-field,
+.editor-field
+{
+    margin:1px 0 0 0;
+}
+
+.text-box
+{
+    width: 50px;
+}
+
+.text-box.multi-line
+{
+    height: 50px;
+}
+
+.tri-state
+{
+    width: 6em;
+}

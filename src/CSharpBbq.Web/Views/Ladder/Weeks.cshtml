@@ -1,0 +1,13 @@
+﻿@model IEnumerable<CSharpBbq.Data.Model.Ladder.LadderWeek>
+@foreach (var item in Model)
+{
+    if (item.Standings.Count > 0)
+    {
+    @Html.ActionLink("Week " + item.WeekNumber, "Week", "Ladder", new { id = item.Id }, null)
+    }
+    else
+    { 
+    <text>Week @item.WeekNumber</text>
+    }
+<text><br></text>
+}

@@ -1,0 +1,9 @@
+How do you think the rules could be written better to facilitate this.
+
+
+Features.
+Rules visualizer. Be able to spit ot the rules in the order they will get executed.
+Use facts to calculate things like age that can be used later.
+
+
+Disadvantage - Can't debug rules.

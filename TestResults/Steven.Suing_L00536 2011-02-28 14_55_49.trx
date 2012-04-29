@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a4f9ad5d-a37a-496c-aff3-dafea4e4e931" name="Steven.Suing@L00536 2011-02-28 14:55:49" runUser="APPLIEDIS\Steven.Suing" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="5f54e2a6-a299-441a-a516-ceb675508073">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Steven.Suing_L00536 2011-02-28 14_55_49">
+      <DeploymentItem filename="C:\TFS\SDC\MSI\Product Lines\Policy\Geico.Msi.PolicySystem.Cycle.PolicyServices\Dev\Tatooine\packages\structuremap.2.6.1.0\automocking\StructureMap.AutoMocking.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\lib\Microsoft.Net.Http.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\structuremap.2.6.1.0\lib\StructureMap.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\Moq.4.0.0.0\lib\Moq.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\bin\Debug\Movies.Business.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\lib\Microsoft.Http.Extensions.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Data\bin\Debug\Movies.Data.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\FluentValidation.2.0.0.0\lib\NET35\FluentValidation.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Service\bin\Movies.Service.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies\bin\Movies.dll" />
+      <DeploymentItem filename="C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\packages\FluentAssertions.1.3.0.1\lib\FluentAssertions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-02-28T14:55:49.5999821-05:00" queuing="2011-02-28T14:55:49.6199832-05:00" start="2011-02-28T14:55:49.7279894-05:00" finish="2011-02-28T14:55:54.1672433-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="23" executed="23" passed="2" error="0" failed="7" timeout="0" aborted="0" inconclusive="14" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PathTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="468a1905-0e2b-8844-80fb-ccb78339da8a">
+      <Execution id="695d138b-1b1d-4e13-89ea-144f8ee85f50" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PathTest" />
+    </UnitTest>
+    <UnitTest name="ActorasdfTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="0e71c21b-26de-f702-5f00-a7830f6bf69f">
+      <Execution id="1264093a-9761-49ef-971c-88b4a62da264" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ActorasdfTest" />
+    </UnitTest>
+    <UnitTest name="GetMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="5bbae043-482d-d28b-9bc6-8146bb49c9fa">
+      <Execution id="8a67ff70-9a70-4f99-88f3-e5a584f605cc" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.IMovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMovieTest" />
+    </UnitTest>
+    <UnitTest name="ActorTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="0d296469-eb11-9a07-f9e5-e89d21cc17fb">
+      <Execution id="6bc6d896-72ee-428c-a64e-a57aa64b7f72" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ActorTest" />
+    </UnitTest>
+    <UnitTest name="TitleTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="514844f5-4c78-d71d-061e-cbbdd19ef813">
+      <Execution id="37b336cd-6922-4620-84a5-7f3ad161938c" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TitleTest" />
+    </UnitTest>
+    <UnitTest name="RatingTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="c1c81b4b-e055-959b-6269-6fc548daf744">
+      <Execution id="2c946aa3-9499-46b9-9b8a-c2b68cc9a79d" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RatingTest" />
+    </UnitTest>
+    <UnitTest name="MovieAgentConstructorTest1" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="5dbc559a-eaff-f4e1-38c5-f06127bd3bbf">
+      <Execution id="c18c41cc-076c-4024-b0c6-fd5fcfd162a4" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieAgentConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="CreateBasicAuthTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="13d2b5bb-5911-b2f4-beec-e92c5c819d17">
+      <Execution id="4145e53d-c750-4549-8b1d-59a920ec229a" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.HttpClientExtensionsTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateBasicAuthTest" />
+    </UnitTest>
+    <UnitTest name="MoviesTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="88ed254d-b2b2-5e9c-02ab-3c102e864cbd">
+      <Execution id="b75403db-0dce-4cbc-9639-c62931fd3e48" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.TagTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoviesTest" />
+    </UnitTest>
+    <UnitTest name="IdTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="50117b6f-ea58-4974-087f-6525ba8f6948">
+      <Execution id="c6fc87d5-a0b1-49e3-8801-98fcd36906ed" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IdTest" />
+    </UnitTest>
+    <UnitTest name="DescriptionTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="8ded22a0-0f47-dc23-9b01-09f0d4223b15">
+      <Execution id="a1e0b5bf-5b0d-4260-bd4f-6adea0e1602c" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DescriptionTest" />
+    </UnitTest>
+    <UnitTest name="TagConstructorTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="e1b1007c-7741-ce7b-3809-fa9e738ebd13">
+      <Execution id="19513445-afe3-47aa-8992-58f8854b6df8" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.TagTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TagConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ThrowIfStatusNotSuccessfulTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="fba307a1-c7ab-9c11-46f1-a02b349d2d7e">
+      <Execution id="3187f263-5575-46f3-a9c0-eb3fbe823c5d" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.HttpClientExtensionsTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThrowIfStatusNotSuccessfulTest" />
+    </UnitTest>
+    <UnitTest name="MovieConstructorTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="727daa37-0967-e6d8-44fb-175e4dcab752">
+      <Execution id="b8c825fc-6509-427b-8ab0-30d8e72dc39e" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieConstructorTest" />
+    </UnitTest>
+    <UnitTest name="TagNameTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="24dd9367-0f33-2601-67fe-bf95debda69d">
+      <Execution id="0e4b7487-552a-473c-a04c-01f7472e4263" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.TagTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TagNameTest" />
+    </UnitTest>
+    <UnitTest name="GetMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="89ebf401-6b86-b9e5-c0b2-621ef14699aa">
+      <Execution id="2935f738-db75-4907-b4bd-d1635eb272bc" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMovieTest" />
+    </UnitTest>
+    <UnitTest name="SaveMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="ec0008f7-4ea6-7a5f-7674-17d776b8babb">
+      <Execution id="e242bfde-6bf6-427c-9ba2-5ebd90e1c0b6" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.IMovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveMovieTest" />
+    </UnitTest>
+    <UnitTest name="IdTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="0033a9c5-1f9d-b111-1e57-f8f33b0dc1bb">
+      <Execution id="0b5ada55-a58f-4c56-8a93-e713554bc887" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.TagTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IdTest" />
+    </UnitTest>
+    <UnitTest name="SaveTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="1b4eaf02-c8e0-aefd-d65f-21b5d8ae10bd">
+      <DeploymentItems>
+        <DeploymentItem filename="Movies.Business.dll" />
+      </DeploymentItems>
+      <Execution id="3ee320da-0fdf-498b-be73-c667545f6252" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.ServiceAgentBaseTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveTest" />
+    </UnitTest>
+    <UnitTest name="TagsTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="55fbc343-eb9b-1dc2-88fc-8144e6aebac0">
+      <Execution id="ccfdbaf0-8a00-47b2-a3f9-baf541a20f4a" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TagsTest" />
+    </UnitTest>
+    <UnitTest name="SaveMovieTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="98b07422-39e2-869f-7460-66d40713bcdd">
+      <Execution id="7b1e7a76-a248-484f-be4e-e18c9af70e1a" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveMovieTest" />
+    </UnitTest>
+    <UnitTest name="MovieAgentConstructorTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="0a179f93-2c44-9739-e49e-21c3d6c2c0b2">
+      <Execution id="21d2904c-240b-4c36-a5ae-e3764fe2e77f" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.MovieAgentTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieAgentConstructorTest" />
+    </UnitTest>
+    <UnitTest name="GetTest" storage="c:\users\steven.suing\documents\visual studio 2010\projects\movies\movies.test\bin\debug\movies.test.dll" id="9a4bf604-ce22-6cd3-63b0-e6ee92d132c5">
+      <DeploymentItems>
+        <DeploymentItem filename="Movies.Business.dll" />
+      </DeploymentItems>
+      <Execution id="db942a51-ee4c-4ad5-a3bc-c11f4275884c" />
+      <TestMethod codeBase="C:/Users/steven.suing/Documents/Visual Studio 2010/Projects/Movies/Movies.Test/bin/Debug/Movies.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Movies.Business.Test.ServiceAgentBaseTest, Movies.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0033a9c5-1f9d-b111-1e57-f8f33b0dc1bb" executionId="0b5ada55-a58f-4c56-8a93-e713554bc887" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a179f93-2c44-9739-e49e-21c3d6c2c0b2" executionId="21d2904c-240b-4c36-a5ae-e3764fe2e77f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0d296469-eb11-9a07-f9e5-e89d21cc17fb" executionId="6bc6d896-72ee-428c-a64e-a57aa64b7f72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0e71c21b-26de-f702-5f00-a7830f6bf69f" executionId="1264093a-9761-49ef-971c-88b4a62da264" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13d2b5bb-5911-b2f4-beec-e92c5c819d17" executionId="4145e53d-c750-4549-8b1d-59a920ec229a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b4eaf02-c8e0-aefd-d65f-21b5d8ae10bd" executionId="3ee320da-0fdf-498b-be73-c667545f6252" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24dd9367-0f33-2601-67fe-bf95debda69d" executionId="0e4b7487-552a-473c-a04c-01f7472e4263" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="468a1905-0e2b-8844-80fb-ccb78339da8a" executionId="695d138b-1b1d-4e13-89ea-144f8ee85f50" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50117b6f-ea58-4974-087f-6525ba8f6948" executionId="c6fc87d5-a0b1-49e3-8801-98fcd36906ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="514844f5-4c78-d71d-061e-cbbdd19ef813" executionId="37b336cd-6922-4620-84a5-7f3ad161938c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55fbc343-eb9b-1dc2-88fc-8144e6aebac0" executionId="ccfdbaf0-8a00-47b2-a3f9-baf541a20f4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bbae043-482d-d28b-9bc6-8146bb49c9fa" executionId="8a67ff70-9a70-4f99-88f3-e5a584f605cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5dbc559a-eaff-f4e1-38c5-f06127bd3bbf" executionId="c18c41cc-076c-4024-b0c6-fd5fcfd162a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="727daa37-0967-e6d8-44fb-175e4dcab752" executionId="b8c825fc-6509-427b-8ab0-30d8e72dc39e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88ed254d-b2b2-5e9c-02ab-3c102e864cbd" executionId="b75403db-0dce-4cbc-9639-c62931fd3e48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89ebf401-6b86-b9e5-c0b2-621ef14699aa" executionId="2935f738-db75-4907-b4bd-d1635eb272bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ded22a0-0f47-dc23-9b01-09f0d4223b15" executionId="a1e0b5bf-5b0d-4260-bd4f-6adea0e1602c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98b07422-39e2-869f-7460-66d40713bcdd" executionId="7b1e7a76-a248-484f-be4e-e18c9af70e1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a4bf604-ce22-6cd3-63b0-e6ee92d132c5" executionId="db942a51-ee4c-4ad5-a3bc-c11f4275884c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1c81b4b-e055-959b-6269-6fc548daf744" executionId="2c946aa3-9499-46b9-9b8a-c2b68cc9a79d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1b1007c-7741-ce7b-3809-fa9e738ebd13" executionId="19513445-afe3-47aa-8992-58f8854b6df8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec0008f7-4ea6-7a5f-7674-17d776b8babb" executionId="e242bfde-6bf6-427c-9ba2-5ebd90e1c0b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fba307a1-c7ab-9c11-46f1-a02b349d2d7e" executionId="3187f263-5575-46f3-a9c0-eb3fbe823c5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0b5ada55-a58f-4c56-8a93-e713554bc887" testId="0033a9c5-1f9d-b111-1e57-f8f33b0dc1bb" testName="IdTest" computerName="L00536" duration="00:00:00.0607402" startTime="2011-02-28T14:55:49.7379900-05:00" endTime="2011-02-28T14:55:50.2150173-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b5ada55-a58f-4c56-8a93-e713554bc887">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.TagTest.IdTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\TagTest.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="21d2904c-240b-4c36-a5ae-e3764fe2e77f" testId="0a179f93-2c44-9739-e49e-21c3d6c2c0b2" testName="MovieAgentConstructorTest" computerName="L00536" duration="00:00:00.0293720" startTime="2011-02-28T14:55:50.2330183-05:00" endTime="2011-02-28T14:55:50.2690204-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21d2904c-240b-4c36-a5ae-e3764fe2e77f">
+    </UnitTestResult>
+    <UnitTestResult executionId="6bc6d896-72ee-428c-a64e-a57aa64b7f72" testId="0d296469-eb11-9a07-f9e5-e89d21cc17fb" testName="ActorTest" computerName="L00536" duration="00:00:00.0018037" startTime="2011-02-28T14:55:50.2850213-05:00" endTime="2011-02-28T14:55:50.3010222-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bc6d896-72ee-428c-a64e-a57aa64b7f72">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.ActorTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1264093a-9761-49ef-971c-88b4a62da264" testId="0e71c21b-26de-f702-5f00-a7830f6bf69f" testName="ActorasdfTest" computerName="L00536" duration="00:00:00.0008128" startTime="2011-02-28T14:55:50.3140229-05:00" endTime="2011-02-28T14:55:50.3230234-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1264093a-9761-49ef-971c-88b4a62da264">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.ActorasdfTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 105
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4145e53d-c750-4549-8b1d-59a920ec229a" testId="13d2b5bb-5911-b2f4-beec-e92c5c819d17" testName="CreateBasicAuthTest" computerName="L00536" duration="00:00:00.0156430" startTime="2011-02-28T14:55:50.3270237-05:00" endTime="2011-02-28T14:55:50.3580254-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4145e53d-c750-4549-8b1d-59a920ec229a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.HttpClientExtensionsTest.CreateBasicAuthTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at Movies.Business.Proxy.HttpClientExtensions.CreateBasicAuth(HttpClient httpClient) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\HttpClientExtensions.cs:line 33
+   at Movies.Business.Test.HttpClientExtensionsTest.CreateBasicAuthTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\HttpClientExtensionsTest.cs:line 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3ee320da-0fdf-498b-be73-c667545f6252" testId="1b4eaf02-c8e0-aefd-d65f-21b5d8ae10bd" testName="SaveTest" computerName="L00536" duration="00:00:00.0132614" startTime="2011-02-28T14:55:50.3700261-05:00" endTime="2011-02-28T14:55:50.3890272-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ee320da-0fdf-498b-be73-c667545f6252">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.ServiceAgentBaseTest.SaveTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at Movies.Business.Proxy.ServiceAgentBase_Accessor.Save[T](String methodUniformResourceIdentifier, T modelObject)
+   at Movies.Business.Test.ServiceAgentBaseTest.SaveTestHelper[T]() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\ServiceAgentBaseTest.cs:line 107
+   at Movies.Business.Test.ServiceAgentBaseTest.SaveTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\ServiceAgentBaseTest.cs:line 116
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0e4b7487-552a-473c-a04c-01f7472e4263" testId="24dd9367-0f33-2601-67fe-bf95debda69d" testName="TagNameTest" computerName="L00536" duration="00:00:00.0008494" startTime="2011-02-28T14:55:50.3930274-05:00" endTime="2011-02-28T14:55:50.4030280-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e4b7487-552a-473c-a04c-01f7472e4263">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.TagTest.TagNameTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\TagTest.cs:line 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="695d138b-1b1d-4e13-89ea-144f8ee85f50" testId="468a1905-0e2b-8844-80fb-ccb78339da8a" testName="PathTest" computerName="L00536" duration="00:00:00.0009682" startTime="2011-02-28T14:55:50.4050281-05:00" endTime="2011-02-28T14:55:50.4160288-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="695d138b-1b1d-4e13-89ea-144f8ee85f50">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.PathTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 150
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c6fc87d5-a0b1-49e3-8801-98fcd36906ed" testId="50117b6f-ea58-4974-087f-6525ba8f6948" testName="IdTest" computerName="L00536" duration="00:00:00.0008472" startTime="2011-02-28T14:55:50.4260293-05:00" endTime="2011-02-28T14:55:50.4320297-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6fc87d5-a0b1-49e3-8801-98fcd36906ed">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.IdTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 135
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37b336cd-6922-4620-84a5-7f3ad161938c" testId="514844f5-4c78-d71d-061e-cbbdd19ef813" testName="TitleTest" computerName="L00536" duration="00:00:00.0008780" startTime="2011-02-28T14:55:50.4360299-05:00" endTime="2011-02-28T14:55:50.4430303-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37b336cd-6922-4620-84a5-7f3ad161938c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.TitleTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 195
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ccfdbaf0-8a00-47b2-a3f9-baf541a20f4a" testId="55fbc343-eb9b-1dc2-88fc-8144e6aebac0" testName="TagsTest" computerName="L00536" duration="00:00:00.0010210" startTime="2011-02-28T14:55:50.4500307-05:00" endTime="2011-02-28T14:55:50.4610313-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ccfdbaf0-8a00-47b2-a3f9-baf541a20f4a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.TagsTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 180
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8a67ff70-9a70-4f99-88f3-e5a584f605cc" testId="5bbae043-482d-d28b-9bc6-8146bb49c9fa" testName="GetMovieTest" computerName="L00536" duration="00:00:00.0465735" startTime="2011-02-28T14:55:50.4940332-05:00" endTime="2011-02-28T14:55:50.5450361-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a67ff70-9a70-4f99-88f3-e5a584f605cc">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Movies.Business.Model.Movie&gt;. Actual:&lt;Movies.Business.Model.Movie&gt;. </Message>
+          <StackTrace>   at Movies.Business.Test.IMovieAgentTest.GetMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\IMovieAgentTest.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c18c41cc-076c-4024-b0c6-fd5fcfd162a4" testId="5dbc559a-eaff-f4e1-38c5-f06127bd3bbf" testName="MovieAgentConstructorTest1" computerName="L00536" duration="00:00:00.0007750" startTime="2011-02-28T14:55:50.5690375-05:00" endTime="2011-02-28T14:55:50.5760379-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c18c41cc-076c-4024-b0c6-fd5fcfd162a4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Movies.Business.Test.MovieAgentTest.MovieAgentConstructorTest1() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieAgentTest.cs:line 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b8c825fc-6509-427b-8ab0-30d8e72dc39e" testId="727daa37-0967-e6d8-44fb-175e4dcab752" testName="MovieConstructorTest" computerName="L00536" duration="00:00:00.0006023" startTime="2011-02-28T14:55:50.6280409-05:00" endTime="2011-02-28T14:55:50.6360413-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8c825fc-6509-427b-8ab0-30d8e72dc39e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.MovieConstructorTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b75403db-0dce-4cbc-9639-c62931fd3e48" testId="88ed254d-b2b2-5e9c-02ab-3c102e864cbd" testName="MoviesTest" computerName="L00536" duration="00:00:00.0008073" startTime="2011-02-28T14:55:50.6420417-05:00" endTime="2011-02-28T14:55:50.6470420-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b75403db-0dce-4cbc-9639-c62931fd3e48">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.TagTest.MoviesTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\TagTest.cs:line 105
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2935f738-db75-4907-b4bd-d1635eb272bc" testId="89ebf401-6b86-b9e5-c0b2-621ef14699aa" testName="GetMovieTest" computerName="L00536" duration="00:00:02.5510443" startTime="2011-02-28T14:55:50.6530423-05:00" endTime="2011-02-28T14:55:53.2131888-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2935f738-db75-4907-b4bd-d1635eb272bc">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.MovieAgentTest.GetMovieTest threw exception: 
+System.Net.Http.HttpException: An error occurred while sending the request. ---&gt; System.Net.WebException: Unable to connect to the remote server ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:4647</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception&amp; exception)
+ --- End of inner exception stack trace ---
+    at System.Net.HttpWebRequest.GetResponse()
+   at System.Net.Http.HttpClientChannel.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+ --- End of inner exception stack trace ---
+    at System.Net.Http.HttpClientChannel.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Get(Uri requestUri)
+   at System.Net.Http.HttpClient.Get(String requestUri)
+   at Movies.Business.Proxy.ServiceAgentBase.Get[T](String methodUniformResourceIdentifier) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\ServiceAgentBase.cs:line 32
+   at Movies.Business.Proxy.MovieAgent.GetMovie(Int32 movieId) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\MoviesAgent.cs:line 23
+   at Movies.Business.Test.MovieAgentTest.GetMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieAgentTest.cs:line 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a1e0b5bf-5b0d-4260-bd4f-6adea0e1602c" testId="8ded22a0-0f47-dc23-9b01-09f0d4223b15" testName="DescriptionTest" computerName="L00536" duration="00:00:00.0026939" startTime="2011-02-28T14:55:53.2291897-05:00" endTime="2011-02-28T14:55:53.2401903-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1e0b5bf-5b0d-4260-bd4f-6adea0e1602c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.DescriptionTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b1e7a76-a248-484f-be4e-e18c9af70e1a" testId="98b07422-39e2-869f-7460-66d40713bcdd" testName="SaveMovieTest" computerName="L00536" duration="00:00:00.0103611" startTime="2011-02-28T14:55:53.2531910-05:00" endTime="2011-02-28T14:55:53.2681919-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b1e7a76-a248-484f-be4e-e18c9af70e1a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.MovieAgentTest.SaveMovieTest threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at Movies.Business.Proxy.MovieAgent.SaveMovie(Movie movie) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\MoviesAgent.cs:line 28
+   at Movies.Business.Test.MovieAgentTest.SaveMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieAgentTest.cs:line 117
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="db942a51-ee4c-4ad5-a3bc-c11f4275884c" testId="9a4bf604-ce22-6cd3-63b0-e6ee92d132c5" testName="GetTest" computerName="L00536" duration="00:00:00.0034554" startTime="2011-02-28T14:55:53.2761924-05:00" endTime="2011-02-28T14:55:53.2851929-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db942a51-ee4c-4ad5-a3bc-c11f4275884c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.ServiceAgentBaseTest.GetTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at Movies.Business.Proxy.ServiceAgentBase_Accessor.Get[T](String methodUniformResourceIdentifier)
+   at Movies.Business.Test.ServiceAgentBaseTest.GetTestHelper[T]() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\ServiceAgentBaseTest.cs:line 77
+   at Movies.Business.Test.ServiceAgentBaseTest.GetTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\ServiceAgentBaseTest.cs:line 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2c946aa3-9499-46b9-9b8a-c2b68cc9a79d" testId="c1c81b4b-e055-959b-6269-6fc548daf744" testName="RatingTest" computerName="L00536" duration="00:00:00.0007259" startTime="2011-02-28T14:55:53.2921933-05:00" endTime="2011-02-28T14:55:53.2981936-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c946aa3-9499-46b9-9b8a-c2b68cc9a79d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at Movies.Business.Test.MovieTest.RatingTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\MovieTest.cs:line 165
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="19513445-afe3-47aa-8992-58f8854b6df8" testId="e1b1007c-7741-ce7b-3809-fa9e738ebd13" testName="TagConstructorTest" computerName="L00536" duration="00:00:00.0023863" startTime="2011-02-28T14:55:53.3921990-05:00" endTime="2011-02-28T14:55:53.4122001-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19513445-afe3-47aa-8992-58f8854b6df8">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at Movies.Business.Test.TagTest.TagConstructorTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\TagTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e242bfde-6bf6-427c-9ba2-5ebd90e1c0b6" testId="ec0008f7-4ea6-7a5f-7674-17d776b8babb" testName="SaveMovieTest" computerName="L00536" duration="00:00:00.0022913" startTime="2011-02-28T14:55:53.4192005-05:00" endTime="2011-02-28T14:55:53.4282010-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e242bfde-6bf6-427c-9ba2-5ebd90e1c0b6">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Movies.Business.Test.IMovieAgentTest.SaveMovieTest threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at Movies.Business.Proxy.MovieAgent.SaveMovie(Movie movie) in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Business\Proxy\MoviesAgent.cs:line 28
+   at Movies.Business.Test.IMovieAgentTest.SaveMovieTest() in C:\Users\steven.suing\Documents\Visual Studio 2010\Projects\Movies\Movies.Test\Business\IMovieAgentTest.cs:line 107
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3187f263-5575-46f3-a9c0-eb3fbe823c5d" testId="fba307a1-c7ab-9c11-46f1-a02b349d2d7e" testName="ThrowIfStatusNotSuccessfulTest" computerName="L00536" duration="00:00:00.0016512" startTime="2011-02-28T14:55:53.4332013-05:00" endTime="2011-02-28T14:55:53.4412018-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3187f263-5575-46f3-a9c0-eb3fbe823c5d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

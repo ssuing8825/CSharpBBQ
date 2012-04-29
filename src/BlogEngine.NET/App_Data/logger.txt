@@ -1,0 +1,8 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/3/2011 6:55:25 AM
+Contents Below
+Error sending email in SendMailMessage:  Failure sending mail. Unable to connect to the remote server A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 93.167.110.224:25
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 8/19/2011 5:47:21 PM
+Contents Below
+Custom filter [App_Code.Extensions.StopForumSpam] - found spam; comment id: 47014792-c532-47ff-b5d1-4334e9d9b198
